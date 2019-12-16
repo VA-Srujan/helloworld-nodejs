@@ -6,7 +6,7 @@ pipeline {
   }
   stages {
     stage('Test') {
-      agent { label 'nodejs-app' }
+      agent { label 'nodejs-app2' }
       steps {
         checkout scm
         container('nodejs') {
